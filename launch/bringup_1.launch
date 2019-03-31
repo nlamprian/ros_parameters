@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Here we change the node name to camera_driver -->
+  <node name="camera_driver" pkg="ros_parameters" type="camera_node_0" output="screen" />
+</launch>

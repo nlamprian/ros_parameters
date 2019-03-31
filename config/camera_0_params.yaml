@@ -1,0 +1,4 @@
+rate: 30
+source_pkg: ros_parameters
+source_img: data/ros.jpg
+frame_id: camera_link_0

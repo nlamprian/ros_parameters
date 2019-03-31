@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="camera_driver_0" pkg="ros_parameters" type="camera_node_1" output="screen">
+    <!-- Here we upload a set of parameters defined in a configuration file -->
+    <rosparam file="$(find ros_parameters)/config/camera_0_params.yaml" command="load" />
+    <remap from="camera" to="camera_0" />
+  </node>
+
+  <node name="camera_driver_1" pkg="ros_parameters" type="camera_node_1" output="screen">
+    <!-- Here we upload a set of parameters defined in a configuration file -->
+    <rosparam file="$(find ros_parameters)/config/camera_1_params.yaml" command="load" />
+    <remap from="camera" to="camera_1" />
+  </node>
+</launch>

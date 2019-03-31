@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Here we set a namespace robot_0001 -->
+  <node name="camera_driver" pkg="ros_parameters" type="camera_node_0" ns="robot_0001" output="screen" />
+</launch>

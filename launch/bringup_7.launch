@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Here we initialize the parameters by uploading a configuration file in the namespace of the dynamic reconfigure server -->
+  <rosparam file="$(find ros_parameters)/config/camera_0_params.yaml" command="load" ns="camera_0" />
+  <node name="camera_driver_0" pkg="ros_parameters" type="camera_node_2" output="screen">
+    <remap from="camera" to="camera_0" />
+  </node>
+
+  <!-- Here we initialize the parameters by uploading a configuration file in the namespace of the dynamic reconfigure server -->
+  <rosparam file="$(find ros_parameters)/config/camera_1_params.yaml" command="load" ns="camera_1" />
+  <node name="camera_driver_1" pkg="ros_parameters" type="camera_node_2" output="screen">
+    <remap from="camera" to="camera_1" />
+  </node>
+</launch>

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="camera_node" pkg="ros_parameters" type="camera_node_0" output="screen" />
+</launch>

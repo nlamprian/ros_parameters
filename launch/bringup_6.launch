@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Here the parameters are handled by the dynamic reconfigure server -->
+  <node name="camera_driver_0" pkg="ros_parameters" type="camera_node_2" output="screen">
+    <remap from="camera" to="camera_0" />
+  </node>
+
+  <!-- Here the parameters are handled by the dynamic reconfigure server -->
+  <node name="camera_driver_1" pkg="ros_parameters" type="camera_node_2" output="screen">
+    <remap from="camera" to="camera_1" />
+  </node>
+</launch>
